@@ -1,0 +1,45 @@
+:root {
+    --violeta: #9c2780;
+    --primariooscuro: #89119D;
+    --amarillo: #FFCE00;
+    --blanco: #FFF;
+    --negro: #000; 
+
+    --fuentePrincipal: "Staatliches", serif; /*we can also use another kind of variables */
+
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /*Calculador de renes para que 1 rem valga 10 pixeles*/
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  /*Globales*/
+  body{
+    background-color: var(--violeta);
+    font-size: 1.6rem;
+    line-height: 1.5;
+  }
+  p{
+    font-size: 1.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--blanco); /*los colores del parrafo o letras blanco*/
+  }
+  a{ /*the links are "a"*/
+    text-decoration: none;
+  }
+  img{
+    width: 100%;
+  }
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+h1, h2, h3{
+    text-align: center;
+    color: var(--amarillo); /*Titles in yellow*/
+    font-family: var(--fuentePrincipal);
+}
